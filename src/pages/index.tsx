@@ -1,4 +1,3 @@
-import { Button } from '@nextui-org/react';
 import { Inter } from 'next/font/google';
 import PageHead from '@/components/commons/PageHead';
 
@@ -10,7 +9,7 @@ export default function Home() {
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
     >
       <PageHead title="Home" />
-      <Button color="primary">Button</Button>
+      <h1 className="text-3xl font-bold text-emerald-600">Ventick App</h1>
     </main>
   );
 }

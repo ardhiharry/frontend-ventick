@@ -1,5 +1,5 @@
 import axios from 'axios';
-import environment from '@/config/environment';
+import env from '@/config/env';
 import { getSession } from 'next-auth/react';
 import { Session } from 'next-auth';
 
@@ -12,7 +12,7 @@ const headers = {
 };
 
 const instance = axios.create({
-  baseURL: environment.API_URL,
+  baseURL: env.API_URL,
   headers,
   timeout: 60 * 1000,
 });

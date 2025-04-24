@@ -1,5 +1,5 @@
-import authServices from '@/services/auth';
-import registerSchema from '@/utils/validation/register.validation';
+import authServices from '@/services/auth.service';
+import registerSchema from '@/validation/register.validation';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
